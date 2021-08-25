@@ -1,0 +1,137 @@
+.navbar{
+    top: 0;
+    left: 0;
+    width: 100%;
+   
+}
+.nav-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo-wrapper{
+    display: flex;
+    margin-left: 3rem;
+    margin-top: 1rem ;
+}
+.logo-wrapper img{
+   margin-top: 0.8rem;
+   width: 55px;
+   height: 50px;
+  
+}
+.logo-text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+.logo-text p:nth-child(1) {
+    color: white;
+    font-size: 1.85rem;
+}
+.logo-text p:nth-child(2) {
+    color: #51E8EF;
+    font-size: 1.4rem;
+    letter-spacing: 0.7rem;
+    padding-top: 0.5rem;
+}
+.link-wrapper{
+    margin-right: 3rem;
+    margin-top: 1rem ;
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: space-between;
+    right: 0;
+    
+}
+.link-wrapper.active{
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+    width: 20rem;
+    background-image: url(/src//img/nav_bg.png);
+    background-color: rgb(0, 5, 8);
+    z-index: 999;
+    margin: 0;
+    box-shadow: 0px 0px 40px -25px #51E8EF;
+
+    
+}
+.link-wrapper.active ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    flex-direction: column;
+
+
+}
+.link-wrapper ul{
+   display: flex;
+   justify-content: space-around;
+   width: 100%;
+}
+.link-wrapper li{
+    list-style: none;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: 0.4s;
+}    
+.link-wrapper li:hover{
+    transform: scale(1.18,1.18);
+    transition: 0.45s;
+} 
+.link-wrapper a{
+    color: #51E8EF;
+    text-decoration: none;
+    transition: 0.5s;
+}   
+.link-wrapper a:hover{
+    
+    text-shadow: 0px 0px 20px #51E8EF, 0px 0px 10px #51E8EF;
+    transition: 0.5s;
+}    
+.menu-icon{
+    position: absolute;
+    right:0 ;
+    padding: 2.4rem;
+    z-index: 1000;
+    display: none;
+}
+
+.fas{
+    color: #51E8EF;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+@media screen and (max-width: 1040px) {
+
+    .menu-icon{
+
+        display: block;
+    }
+    .link-wrapper{
+       
+        display: none;
+    }
+    .link-wrapper.active{
+        display: block;
+    
+        
+    }
+}
+    
+ 
+@media screen and (max-width: 390px) {
+
+    .logo-text{
+        display: none;
+    }
+    .link-wrapper.active{
+        width: 100%;
+    }
+}
+    
+ 
