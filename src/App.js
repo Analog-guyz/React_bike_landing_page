@@ -1,9 +1,10 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import Feature from './components/Feature_block';
+import bg_img from './img/bg.png'
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{ backgroundImage: `url(${bg_img})` }} >
       <Navbar/>
       <div className="content-wrapper">
         <h1>odyssey</h1>
